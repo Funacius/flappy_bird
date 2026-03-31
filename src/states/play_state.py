@@ -61,7 +61,7 @@ class PlayState(BaseState):
         gained = check_player_vs_collectibles(self.player, self.collectibles.items)
         self.score += gained
 
-        if self.player.y <= 0 or self.player.y + self.player.height >= CONFIG.screen_height:
+        if self.player.y <= 0 or self.player.y + self.player.height >= (CONFIG.screen_height - CONFIG.ground_height):
             self._game_over()
             return
 

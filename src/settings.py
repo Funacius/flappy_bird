@@ -4,6 +4,7 @@ from dataclasses import dataclass
 class Config:
     screen_width: int = 960
     screen_height: int = 540
+    ground_height: int = 50
     title: str = "Infinite Flyer"
     fps: int = 60
 
