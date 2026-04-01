@@ -4,6 +4,7 @@ from src.settings import CONFIG
 from src.states.menu_state import MenuState
 from src.states.play_state import PlayState
 from src.states.game_over_state import GameOverState
+from src.systems.sfx import SFX
 
 
 class Game:
@@ -19,6 +20,9 @@ class Game:
             "last_score": 0,
         }
         self.state = MenuState(self)
+
+        self.sfx = SFX()
+        self.sfx.play_music("assets/sfx/bg_music.mp3")
 
     def change_state(self, state_name: str) -> None:
         if state_name == "menu":

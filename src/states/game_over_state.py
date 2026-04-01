@@ -2,6 +2,7 @@ import pygame
 
 from src.states.base_state import BaseState
 from src.ui.text import draw_centered_text
+from src.systems.sfx import SFX
 
 
 class GameOverState(BaseState):
@@ -9,6 +10,11 @@ class GameOverState(BaseState):
         for event in events:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_r:
+                    #Play sound
+                    sfx = SFX.get_instance()
+                    if sfx:
+                        sfx.play("click")
+                    
                     self.game.change_state("play")
                 elif event.key == pygame.K_ESCAPE:
                     self.game.running = False

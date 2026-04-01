@@ -5,6 +5,7 @@ import os
 from src.core.base_entity import BaseEntity
 from src.settings import CONFIG
 from src.systems.animation import Animation
+from src.systems.sfx import SFX
 
 
 class Player(BaseEntity):
@@ -47,6 +48,11 @@ class Player(BaseEntity):
         self.is_flapping = True
         # Keep the "flap" frame visible for a bit longer to prevent flickering
         self.flap_timer = 0.25
+
+        # 🔊 Play sound
+        sfx = SFX.get_instance()
+        if sfx:
+            sfx.play("fly")
 
     def update(self, dt: float) -> None:
         # Physics

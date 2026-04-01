@@ -1,4 +1,5 @@
 from __future__ import annotations
+from src.systems.sfx import SFX
 
 
 def check_player_vs_obstacles(player, obstacles) -> bool:
@@ -16,4 +17,7 @@ def check_player_vs_collectibles(player, collectibles) -> int:
         if item.active and p_rect.colliderect(item.rect()):
             item.active = False
             score += 1
+            sfx = SFX.get_instance()
+            if sfx:
+                sfx.play("coin")
     return score
