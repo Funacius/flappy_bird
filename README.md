@@ -62,3 +62,7 @@ To optimize performance and prevent frequent memory allocation/garbage collectio
 *   **Player & Obstacles:** "Tappy Plane" by [Kenney.nl](https://kenney.nl/assets/tappy-plane) (CC0).
 *   **Background Layers:** "Background Elements" by [Kenney.nl](https://kenney.nl/assets/background-elements) (CC0).
 *   **Collectibles:** "Spinning Coin" by [thepeeps191](https://thepeeps191.itch.io/spinning-coin) (itch.io).
+*   **Sound Effects:**  "Modern Technology select" from [mixkit](https://mixkit.co/free-sound-effects/click/).
+                        "swoosh 4" by [Makoto-AE](https://pixabay.com/sound-effects/film-special-effects-swoosh-4-359828/).
+                        "Pixel" by [Robloxuer](https://pixabay.com/music/video-games-pixel-245147/).
+                        "Coins" by [SoundReality](https://pixabay.com/sound-effects/film-special-effects-coins-135571/).
